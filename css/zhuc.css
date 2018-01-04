@@ -1,0 +1,26 @@
+.style-layout{
+    width: 6.4rem;
+    min-height: 2rem;
+}
+.style_logo,.style_banner,.style_new,.style_hot,.style_fasion,.style_footer{
+    width: 6.4rem;
+
+}
+.style_banner {
+    margin-top: 1rem;
+    color: #7f7f7f;
+    text-align: center;
+}
+.style_banner input{
+    font-size: 0.22rem;
+    width: 90%;
+    margin-bottom: 0.2rem;
+    outline: none;
+    /*border-bottom: 1px solid #bdbdbd;*/
+    border: 1px solid #bdbdbd;
+    background:white;
+    height: 0.6rem;
+}
+.style_banner form{
+    color: #7f7f7f;
+}

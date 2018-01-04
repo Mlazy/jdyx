@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易严选</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style-layout.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        body, div, ul, li, a, img, h1, h2, h3, h4, h5, p, input {
+            margin: 0;
+            padding: 0;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            font-family: "微软雅黑", Verdana, Arial, Helvetica, sans-serif;
+            position: relative;
+            height: 1600px;
+        }
+
+        img, input {
+            outline: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #545454;
+        }
+
+        a:visited {
+            color: #525252;
+        }
+
+        a:hover {
+            color: #4D4D4D;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .ui-page {
+            -webkit-backface-visibility: hidden;
+        }
+
+        .container {
+            padding: 5px;
+            min-width: 320px;
+        }
+
+        #one {
+            width: 100%;
+        }
+
+        #one li {
+            float: left;
+        }
+
+        #one li .a-1 {
+            min-height: 70px;
+        }
+
+        #one li a {
+            display: block;
+            margin: 5px;
+            background: yellow;
+        }
+
+        #one li img {
+            width: 100%;
+            min-height: 70px;
+            vertical-align: middle;
+        }
+
+        .scroll {
+            width: 80px;
+            height: 80px;
+            color: #fff;
+            line-height: 80px;
+            text-align: center;
+            position: fixed;
+            right: 30px;
+            bottom: 50px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+    <meta name="viewport"
+          content="width-device-width,
+          initial-scale=1.0,
+          user-scalable=no,
+          maximum-scale=1.0,
+          minimum-scale=1.0 ">
+
+</head>
+<body>
+<div class="style-layout">
+    <div style="height:200px;">
+        <!--<div class="scroll" id="scroll" style="display:none;"><img src=img/top.png alt="" style="width: 50%;margin-left: 1rem;z-index: 9999;position: relative"> </div>-->
+    <div class="style_logo">
+        <a href="#">
+        <span style="width: 1.3rem;height: 1.3rem;">
+        <img src="img/logo.png" style="float: left;width: 100%;margin-left: 0.1rem;margin-top: 0.1rem;z-index: 9999;" ></span></a>
+        <div class="style_search">
+            <form action="">
+                <input type="text" placeholder="搜索好商品，精彩不中断">
+		      <span>
+		      	<img src="img/search.png" alt="">
+		      </span>
+            </form>
+        </div>
+    </div>
+    <div id="topNav" class="swiper-container">
+        <div class="swiper-wrapper">
+
+             <div class="swiper-slide active"><span>推荐</span></div>
+            <div class="swiper-slide"><span>居家</span></div>
+            <div class="swiper-slide"><span>餐厨</span></div>
+            <div class="swiper-slide"><span>配件</span></div>
+            <div class="swiper-slide"><span>服饰</span></div>
+            <div class="swiper-slide"><span>电器</span></div>
+            <div class="swiper-slide"><span>洗护</span></div>
+            <div class="swiper-slide"><span>杂货</span></div>
+            <div class="swiper-slide"><span>餐饮</span></div>
+            <div class="swiper-slide"><span>婴童</span></div>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="swiper-container2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="html/XQ.html"><img src="img/banner/banner1.jpg"/></a></div>
+            <div class="swiper-slide"><a href="html/XQ.html"><img src="img/banner/banner3.jpg" /></a></div>
+            <div class="swiper-slide"><img src="img/banner/banner4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/banner/banner5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/banner/banner6.jpg" /></div>
+        </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+        <div class="bannera">
+        <span>
+        <img src="img/bannera.png" alt="">
+        </span>
+    </div>
+    <div class="style_new">
+        <div class="style_new_title">
+            <a href="#" style="color: black">
+                <span style="font-weight: 600">品牌制造商直供</span>
+                <span style="position: absolute;display: block;
+                                                  width: 0.4rem;
+                                                  height: 0.4rem;
+                                                  top: 0.05rem;right: 1.9rem;">
+                <img src="img/newa.png" alt="" style="width: 0.25rem;height: 0.25rem;" >
+                    </span>
+            </a>
+        </div>
+        <ul class="clearfix">
+            <li style="position: relative">
+                <a href="#" style="display: inline-block;   ">
+                    <img src="img/new.png" alt="" style="background-color: #ededed;position: relative">
+                </a>
+                    <p style="position: absolute;top: 13px;left: 12px;}">Adidas制造商</p>
+                <p style="position: absolute;top: 35px;left: 12px;}">35元起</p>
+
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/new%20(2).png" alt=""style="background-color: #ededed;">
+                </a>
+                <p style="position: absolute;top: 0.95rem;left: 3.5rem;}">UGG制造商</p>
+                <p style="position: absolute;top: 1.35rem;left: 3.5rem;">35元起</p>
+            </li>
+            <li style="">
+                <a href="#">
+                    <img src="img/new%20(3).png" alt="" style="background-color: #ededed;">
+                </a>
+                <p style="position: absolute;top:3rem;left: 0.3rem;">UGG制造商</p>
+                <p style="position: absolute;top:3.45rem;left: 0.3rem ">35元起</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/new%20(4).png" alt=""style="background-color: #ededed;">
+                </a>
+                <p style="position: absolute;top:3rem;left: 3.5rem;">MUJI制造商</p>
+                <p style="position: absolute;top:3.45rem;left: 3.5rem ">12.9元起</p>
+            </li>
+        </ul>
+    </div>
+    <div class="style_hot">
+        <span data-reactid=".0.4.0.0.0">周一周四 · 新品首发</span>
+        <p class="style_new_more">
+            <a href="html/XQ.html"><button>查看全部</button></a>
+        </p>
+    </div>
+    <div class="style_xp">
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <img src="img/xp.png" alt=>
+                </a>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">【跨年狂欢礼品卡】</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">限时限量特惠，每人限买一张</p>
+                <p style="color:#b4282d;">￥10000</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/xp%20(2).png" alt="">
+                </a>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">互联网大会同款 特型黄酒 500毫升</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">绍兴出产，八年陈酿</p>
+                <p style="color: #b4282d">￥68</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/xp%20(3).png" alt="">
+                </a>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">24寸 纯PC“铝框”（非全铝）拉杆箱</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">71升容量升级，灵活出行</p>
+                <p style="color: #b4282d">￥389</p>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="img/xp%20(4).png" alt=>
+                </a>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">法国雨露棉麻衬衫</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">天然棉麻的触感与心跳</p>
+                <p style="color:#b4282d;">￥129</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/xp%20(6).png" alt="">
+                </a>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">袖帽可拆卸棉夹克</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">耐寒保暖，一衣两穿</p>
+                <p style="color: #b4282d">￥189</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/xp%20(7).png" alt="">
+                </a>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">100%羊毛 男式经典美利奴V领羊毛衫</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">澳洲美利奴羊毛，细腻温暖伴你过一整个冬天</p>
+                <p style="color: #b4282d">￥169</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="style_hw">
+        <div class="style_hwa">
+            <span data-reactid=".0.4.0.0.0">人气推荐 · 好物精选</span>
+            <p class="style_hwaa_more">
+                <button>查看全部</button>
+            </p>
+        </div>
+    </div>
+    <div class="style_new" style="margin-bottom: 1.2rem">
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <img src="img/a%20(3).png" alt="" style="background-color: #ededed;">
+                </a>
+                <div class="style-le" style="left: auto">
+                <button class="a">爆品</button>
+                 <button class="b">跨年专享价</button> </div>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">男式咖啡碳+5℃升级保暖内衣</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">从咖啡到纱线，温暖入肤</p>
+                <p style="color: #b4282d">￥52.5</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/a%20(2).png" alt="" style="background-color: #ededed;">
+                </a>
+                <div class="style-le" style="left: auto">
+                    <button class="a">爆品</button>
+                    <button class="b">限时抢购</button> </div>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">经典100%羊绒格纹围巾</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">Chloe制造商，呼和浩特山羊绒</p>
+                <p style="color: #b4282d">￥134.5</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/a.png" alt="" style="background-color: #ededed;">
+                </a>
+                <div class="style-le" style="left: auto">
+                    <!--<button class="a">爆品</button>-->
+                    <button class="b">跨年专享价</button> </div>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">互联网大会同款 男式迷彩短款厚羽绒</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">虎斑迷彩，温暖厚实的暖意佼佼者</p>
+                <p style="color: #b4282d">￥399</p>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/a.png" alt="" style="background-color: #ededed;">
+                </a>
+                <div class="style-le" style="">
+                    <button class="a">爆品</button>
+                    <button class="b">跨年专享价</button> </div>
+                <p style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">男式咖啡碳+5℃升级保暖内衣</p>
+                <p style="color: #7f7f7f;font-size: .1rem;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">从咖啡到纱线，温暖入肤</p>
+                <p style="color: #b4282d">￥52.5</p>
+            </li>
+        </ul>
+    </div>
+    <div class="style_footer">
+        <ul class="clearfix">
+            <li>
+                <a href=""><img src="img/home.jpg"></a>
+                <p>首页</p>
+            </li>
+            <li>
+                <a href=""><img src="img/sw.jpg"></a>
+                <p>识物</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/nav.png"></a>
+                <p>分类</p>
+            </li>
+            <li>
+                <a href=""><img src="img/bag.jpg"></a>
+                <p>购物袋</p>
+            </li>
+            <li>
+                <a href="html/deng.html"><img src="img/person.png"></a>
+                <p>个人</p>
+            </li>
+        </ul>
+    </div>
+        </div>
+</div>
+<div class="scroll" id="scroll" style="display:none;"><img src=img/top.png alt="" style="width: 50%;margin-left: 1rem;z-index: 9999;position: relative"> </div>
+
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fontSizeSet.js"></script>
+<script type="text/javascript">
+
+    var mySwiper = new Swiper('#topNav', {
+        freeMode: true,
+        freeModeMomentumRatio: 0.5,
+        slidesPerView: 'auto',
+
+    });
+
+    swiperWidth = mySwiper.container[0].clientWidth
+    maxTranslate = mySwiper.maxTranslate();
+    maxWidth = -maxTranslate + swiperWidth / 2
+
+    $(".swiper-container").on('touchstart', function(e) {
+        e.preventDefault()
+    })
+
+    mySwiper.on('tap', function(swiper, e) {
+
+        e.preventDefault()
+
+        slide = swiper.slides[swiper.clickedIndex]
+        slideLeft = slide.offsetLeft
+        slideWidth = slide.clientWidth
+        slideCenter = slideLeft + slideWidth / 2
+        // 被点击slide的中心点
+
+        mySwiper.setWrapperTransition(300)
+
+        if (slideCenter < swiperWidth / 2) {
+
+            mySwiper.setWrapperTranslate(0)
+
+        } else if (slideCenter > maxWidth) {
+
+            mySwiper.setWrapperTranslate(maxTranslate)
+
+        } else {
+
+            nowTlanslate = slideCenter - swiperWidth / 2
+
+            mySwiper.setWrapperTranslate(-nowTlanslate)
+
+        }
+
+        $("#topNav  .active").removeClass('active')
+
+        $("#topNav .swiper-slide").eq(swiper.clickedIndex).addClass('active')
+
+    })
+
+    var mySwiper1 = new Swiper('.swiper-container1',{
+        autoplay:true,
+    });
+
+
+    window.onload = function() {
+        var mySwiper1 = new Swiper('#header',{
+            freeMode : true,
+            slidesPerView : 'auto',
+            freeModeSticky : true ,
+        });
+
+        var mySwiper2 = new Swiper('.swiper-container2',{
+            autoplay:3000,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+
+
+
+
+
+
+
+        var tabsSwiper = new Swiper('#tabs-container',{
+            speed:500,
+            on:{
+                slideChangeTransitionStart: function(){
+
+                    $(".tabs .active").removeClass('active');
+                    $(".tabs a").eq(this.activeIndex).addClass('active');
+                }
+            }
+        })
+
+    }
+
+    $(function(){
+        showScroll();
+        function showScroll(){
+            $(window).scroll( function() {
+                var scrollValue=$(window).scrollTop();
+                scrollValue > 100 ? $('div[class=scroll]').fadeIn():$('div[class=scroll]').fadeOut();
+            } );
+            $('#scroll').click(function(){
+                $("html,body").animate({scrollTop:0},200);
+            });
+        }
+    })
+
+</script>
+
+    </body>
+</html>
